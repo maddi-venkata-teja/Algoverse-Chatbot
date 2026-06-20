@@ -1,0 +1,31 @@
+{
+  "benchmark_type": "latency",
+  "runs_per_query": 2,
+  "timestamp": "2026-06-20T17:58:16.418714",
+  "queries": {
+    "What is a binary tree?": {
+      "min_ms": 156.47,
+      "max_ms": 184.06,
+      "avg_ms": 170.27,
+      "std_ms": 13.8,
+      "p95_ms": 182.68,
+      "p99_ms": 183.79
+    },
+    "How do hash tables work?": {
+      "min_ms": 164.76,
+      "max_ms": 194.33,
+      "avg_ms": 179.55,
+      "std_ms": 14.79,
+      "p95_ms": 192.86,
+      "p99_ms": 194.04
+    },
+    "Explain graph algorithms": {
+      "min_ms": 139.78,
+      "max_ms": 143.29,
+      "avg_ms": 141.54,
+      "std_ms": 1.75,
+      "p95_ms": 143.12,
+      "p99_ms": 143.26
+    }
+  }
+}

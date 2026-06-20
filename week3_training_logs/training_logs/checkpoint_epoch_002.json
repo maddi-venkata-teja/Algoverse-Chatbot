@@ -1,0 +1,14 @@
+{
+  "epoch": 2,
+  "timestamp": "2026-06-20T17:38:38.170565",
+  "model_state": {
+    "weights": "..."
+  },
+  "optimizer_state": {
+    "lr": 0.001
+  },
+  "metrics": {
+    "loss": 4.5125,
+    "accuracy": 0.66
+  }
+}

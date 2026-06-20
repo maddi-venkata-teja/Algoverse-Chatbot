@@ -1,0 +1,51 @@
+================================================================================
+VECTOR SEARCH TUNING REPORT
+================================================================================
+
+Generated: 2026-06-20T17:58:16.859274
+
+[TUNING RESULTS SUMMARY]
+
+parameter_tuning:
+{
+  "timestamp": "2026-06-20T17:58:13.981001",
+  "parameter_variations": {
+    "n_results=1": {
+      "avg_response_time_ms": 372.64,
+      "avg_quality_score": 0.4301,
+      "queries_tested": 1,
+      "optimal": 0.0
+    },
+    "n_results=3": {
+      "avg_response_time_ms": 164.46,
+      "avg_quality_score": 0.4098,
+      "queries_tested": 1,
+      "optimal": 0.0
+    },
+    "n_results=5": {
+      "avg_response_time_ms": 143.97,
+      "avg_quality_score": 0.3754,
+      "queries_tested": 1,
+      "optimal": 0.0
+    },
+    "n_results=10": {
+      "avg_response_time_ms": 156.25,
+      "avg_quality_score": 0.3371,
+      "queries_tested": 1,
+      "optimal": 0.0
+    },
+    "n_results=20": {
+      "avg_response_time_ms": 149.15,
+      "avg_quality_score": 0.3371,
+      "queries_tested": 1,
+      "optimal": 0.0
+    }
+  }
+}
+
+[OPTIMIZATION RECOMMENDATIONS]
+  • Caching: Enable query result caching for repeated queries
+  • Batch Processing: Use batch search for multiple queries
+  • Indexing: Ensure proper HNSW configuration
+
+================================================================================

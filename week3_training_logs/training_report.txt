@@ -1,0 +1,18 @@
+================================================================================
+TRAINING REPORT
+================================================================================
+
+Generated: 2026-06-20T17:58:12.974974
+Total Metrics Logged: 120
+Metric Types: {'val_loss', 'val_accuracy', 'loss', 'train_loss', 'accuracy', 'train_accuracy'}
+Epoch Range: 1 - 5
+
+Best Epochs:
+  val_loss: Epoch 5 (value: 4.255795)
+  val_accuracy: Epoch 5 (value: 0.880000)
+  loss: Epoch 5 (value: 3.869905)
+  train_loss: Epoch 5 (value: 3.868905)
+  accuracy: Epoch 5 (value: 0.900000)
+  train_accuracy: Epoch 5 (value: 0.900000)
+
+================================================================================

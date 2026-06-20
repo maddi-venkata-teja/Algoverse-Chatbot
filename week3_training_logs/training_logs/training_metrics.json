@@ -1,0 +1,1537 @@
+{
+  "total_metrics": 120,
+  "metrics": [
+    {
+      "epoch": 1,
+      "step": 1,
+      "metric_type": "loss",
+      "value": 4.751,
+      "timestamp": "2026-06-20T17:38:38.169040",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 1,
+      "metric_type": "accuracy",
+      "value": 0.58,
+      "timestamp": "2026-06-20T17:38:38.169097",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 11,
+      "metric_type": "loss",
+      "value": 4.761,
+      "timestamp": "2026-06-20T17:38:38.169128",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 11,
+      "metric_type": "accuracy",
+      "value": 0.58,
+      "timestamp": "2026-06-20T17:38:38.169157",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 21,
+      "metric_type": "loss",
+      "value": 4.771,
+      "timestamp": "2026-06-20T17:38:38.169179",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 21,
+      "metric_type": "accuracy",
+      "value": 0.58,
+      "timestamp": "2026-06-20T17:38:38.169257",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 31,
+      "metric_type": "loss",
+      "value": 4.781,
+      "timestamp": "2026-06-20T17:38:38.169306",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 31,
+      "metric_type": "accuracy",
+      "value": 0.58,
+      "timestamp": "2026-06-20T17:38:38.169352",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 41,
+      "metric_type": "loss",
+      "value": 4.791,
+      "timestamp": "2026-06-20T17:38:38.169417",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 41,
+      "metric_type": "accuracy",
+      "value": 0.58,
+      "timestamp": "2026-06-20T17:38:38.169458",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 51,
+      "metric_type": "loss",
+      "value": 4.801,
+      "timestamp": "2026-06-20T17:38:38.169498",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 51,
+      "metric_type": "accuracy",
+      "value": 0.58,
+      "timestamp": "2026-06-20T17:38:38.169528",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 61,
+      "metric_type": "loss",
+      "value": 4.811,
+      "timestamp": "2026-06-20T17:38:38.169568",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 61,
+      "metric_type": "accuracy",
+      "value": 0.58,
+      "timestamp": "2026-06-20T17:38:38.169587",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 71,
+      "metric_type": "loss",
+      "value": 4.821,
+      "timestamp": "2026-06-20T17:38:38.169603",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 71,
+      "metric_type": "accuracy",
+      "value": 0.58,
+      "timestamp": "2026-06-20T17:38:38.169642",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 81,
+      "metric_type": "loss",
+      "value": 4.831,
+      "timestamp": "2026-06-20T17:38:38.169677",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 81,
+      "metric_type": "accuracy",
+      "value": 0.58,
+      "timestamp": "2026-06-20T17:38:38.169706",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 91,
+      "metric_type": "loss",
+      "value": 4.841,
+      "timestamp": "2026-06-20T17:38:38.169729",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 91,
+      "metric_type": "accuracy",
+      "value": 0.58,
+      "timestamp": "2026-06-20T17:38:38.169755",
+      "batch_size": 32,
+      "learning_rate": 0.0009000000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0009000000000000001
+      }
+    },
+    {
+      "epoch": 1,
+      "step": 0,
+      "metric_type": "train_loss",
+      "value": 4.75,
+      "timestamp": "2026-06-20T17:38:38.169777",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 1,
+      "step": 0,
+      "metric_type": "val_loss",
+      "value": 5.2250000000000005,
+      "timestamp": "2026-06-20T17:38:38.169794",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 1,
+      "step": 0,
+      "metric_type": "train_accuracy",
+      "value": 0.58,
+      "timestamp": "2026-06-20T17:38:38.169825",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 1,
+      "step": 0,
+      "metric_type": "val_accuracy",
+      "value": 0.5599999999999999,
+      "timestamp": "2026-06-20T17:38:38.169842",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 2,
+      "step": 1,
+      "metric_type": "loss",
+      "value": 4.5135000000000005,
+      "timestamp": "2026-06-20T17:38:38.169870",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 1,
+      "metric_type": "accuracy",
+      "value": 0.66,
+      "timestamp": "2026-06-20T17:38:38.169904",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 11,
+      "metric_type": "loss",
+      "value": 4.5235,
+      "timestamp": "2026-06-20T17:38:38.169927",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 11,
+      "metric_type": "accuracy",
+      "value": 0.66,
+      "timestamp": "2026-06-20T17:38:38.169960",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 21,
+      "metric_type": "loss",
+      "value": 4.5335,
+      "timestamp": "2026-06-20T17:38:38.170000",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 21,
+      "metric_type": "accuracy",
+      "value": 0.66,
+      "timestamp": "2026-06-20T17:38:38.170034",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 31,
+      "metric_type": "loss",
+      "value": 4.5435,
+      "timestamp": "2026-06-20T17:38:38.170053",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 31,
+      "metric_type": "accuracy",
+      "value": 0.66,
+      "timestamp": "2026-06-20T17:38:38.170069",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 41,
+      "metric_type": "loss",
+      "value": 4.5535000000000005,
+      "timestamp": "2026-06-20T17:38:38.170095",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 41,
+      "metric_type": "accuracy",
+      "value": 0.66,
+      "timestamp": "2026-06-20T17:38:38.170116",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 51,
+      "metric_type": "loss",
+      "value": 4.5635,
+      "timestamp": "2026-06-20T17:38:38.170132",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 51,
+      "metric_type": "accuracy",
+      "value": 0.66,
+      "timestamp": "2026-06-20T17:38:38.170147",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 61,
+      "metric_type": "loss",
+      "value": 4.5735,
+      "timestamp": "2026-06-20T17:38:38.170184",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 61,
+      "metric_type": "accuracy",
+      "value": 0.66,
+      "timestamp": "2026-06-20T17:38:38.170244",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 71,
+      "metric_type": "loss",
+      "value": 4.5835,
+      "timestamp": "2026-06-20T17:38:38.170266",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 71,
+      "metric_type": "accuracy",
+      "value": 0.66,
+      "timestamp": "2026-06-20T17:38:38.170293",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 81,
+      "metric_type": "loss",
+      "value": 4.593500000000001,
+      "timestamp": "2026-06-20T17:38:38.170322",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 81,
+      "metric_type": "accuracy",
+      "value": 0.66,
+      "timestamp": "2026-06-20T17:38:38.170346",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 91,
+      "metric_type": "loss",
+      "value": 4.6035,
+      "timestamp": "2026-06-20T17:38:38.170386",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 91,
+      "metric_type": "accuracy",
+      "value": 0.66,
+      "timestamp": "2026-06-20T17:38:38.170408",
+      "batch_size": 32,
+      "learning_rate": 0.0008100000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0008100000000000001
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 0,
+      "metric_type": "train_loss",
+      "value": 4.5125,
+      "timestamp": "2026-06-20T17:38:38.170431",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 2,
+      "step": 0,
+      "metric_type": "val_loss",
+      "value": 4.963750000000001,
+      "timestamp": "2026-06-20T17:38:38.170448",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 2,
+      "step": 0,
+      "metric_type": "train_accuracy",
+      "value": 0.66,
+      "timestamp": "2026-06-20T17:38:38.170467",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 2,
+      "step": 0,
+      "metric_type": "val_accuracy",
+      "value": 0.64,
+      "timestamp": "2026-06-20T17:38:38.170518",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 3,
+      "step": 1,
+      "metric_type": "loss",
+      "value": 4.287875,
+      "timestamp": "2026-06-20T17:38:38.171722",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 1,
+      "metric_type": "accuracy",
+      "value": 0.74,
+      "timestamp": "2026-06-20T17:38:38.171761",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 11,
+      "metric_type": "loss",
+      "value": 4.2978749999999994,
+      "timestamp": "2026-06-20T17:38:38.171842",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 11,
+      "metric_type": "accuracy",
+      "value": 0.74,
+      "timestamp": "2026-06-20T17:38:38.171874",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 21,
+      "metric_type": "loss",
+      "value": 4.307874999999999,
+      "timestamp": "2026-06-20T17:38:38.171926",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 21,
+      "metric_type": "accuracy",
+      "value": 0.74,
+      "timestamp": "2026-06-20T17:38:38.171988",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 31,
+      "metric_type": "loss",
+      "value": 4.317874999999999,
+      "timestamp": "2026-06-20T17:38:38.172025",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 31,
+      "metric_type": "accuracy",
+      "value": 0.74,
+      "timestamp": "2026-06-20T17:38:38.172062",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 41,
+      "metric_type": "loss",
+      "value": 4.327875,
+      "timestamp": "2026-06-20T17:38:38.172109",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 41,
+      "metric_type": "accuracy",
+      "value": 0.74,
+      "timestamp": "2026-06-20T17:38:38.172163",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 51,
+      "metric_type": "loss",
+      "value": 4.3378749999999995,
+      "timestamp": "2026-06-20T17:38:38.172191",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 51,
+      "metric_type": "accuracy",
+      "value": 0.74,
+      "timestamp": "2026-06-20T17:38:38.172219",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 61,
+      "metric_type": "loss",
+      "value": 4.347874999999999,
+      "timestamp": "2026-06-20T17:38:38.172242",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 61,
+      "metric_type": "accuracy",
+      "value": 0.74,
+      "timestamp": "2026-06-20T17:38:38.172271",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 71,
+      "metric_type": "loss",
+      "value": 4.357874999999999,
+      "timestamp": "2026-06-20T17:38:38.172289",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 71,
+      "metric_type": "accuracy",
+      "value": 0.74,
+      "timestamp": "2026-06-20T17:38:38.172318",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 81,
+      "metric_type": "loss",
+      "value": 4.367875,
+      "timestamp": "2026-06-20T17:38:38.172372",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 81,
+      "metric_type": "accuracy",
+      "value": 0.74,
+      "timestamp": "2026-06-20T17:38:38.172392",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 91,
+      "metric_type": "loss",
+      "value": 4.3778749999999995,
+      "timestamp": "2026-06-20T17:38:38.172409",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 91,
+      "metric_type": "accuracy",
+      "value": 0.74,
+      "timestamp": "2026-06-20T17:38:38.172431",
+      "batch_size": 32,
+      "learning_rate": 0.0007290000000000002,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0007290000000000002
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 0,
+      "metric_type": "train_loss",
+      "value": 4.286874999999999,
+      "timestamp": "2026-06-20T17:38:38.172471",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 3,
+      "step": 0,
+      "metric_type": "val_loss",
+      "value": 4.7155625,
+      "timestamp": "2026-06-20T17:38:38.172506",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 3,
+      "step": 0,
+      "metric_type": "train_accuracy",
+      "value": 0.74,
+      "timestamp": "2026-06-20T17:38:38.172523",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 3,
+      "step": 0,
+      "metric_type": "val_accuracy",
+      "value": 0.72,
+      "timestamp": "2026-06-20T17:38:38.172543",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 4,
+      "step": 1,
+      "metric_type": "loss",
+      "value": 4.073531249999999,
+      "timestamp": "2026-06-20T17:38:38.172568",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 1,
+      "metric_type": "accuracy",
+      "value": 0.8200000000000001,
+      "timestamp": "2026-06-20T17:38:38.172605",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 11,
+      "metric_type": "loss",
+      "value": 4.083531249999999,
+      "timestamp": "2026-06-20T17:38:38.172631",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 11,
+      "metric_type": "accuracy",
+      "value": 0.8200000000000001,
+      "timestamp": "2026-06-20T17:38:38.172646",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 21,
+      "metric_type": "loss",
+      "value": 4.093531249999999,
+      "timestamp": "2026-06-20T17:38:38.172662",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 21,
+      "metric_type": "accuracy",
+      "value": 0.8200000000000001,
+      "timestamp": "2026-06-20T17:38:38.172693",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 31,
+      "metric_type": "loss",
+      "value": 4.103531249999999,
+      "timestamp": "2026-06-20T17:38:38.172726",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 31,
+      "metric_type": "accuracy",
+      "value": 0.8200000000000001,
+      "timestamp": "2026-06-20T17:38:38.172757",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 41,
+      "metric_type": "loss",
+      "value": 4.113531249999999,
+      "timestamp": "2026-06-20T17:38:38.172810",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 41,
+      "metric_type": "accuracy",
+      "value": 0.8200000000000001,
+      "timestamp": "2026-06-20T17:38:38.172839",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 51,
+      "metric_type": "loss",
+      "value": 4.123531249999999,
+      "timestamp": "2026-06-20T17:38:38.172875",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 51,
+      "metric_type": "accuracy",
+      "value": 0.8200000000000001,
+      "timestamp": "2026-06-20T17:38:38.172895",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 61,
+      "metric_type": "loss",
+      "value": 4.133531249999999,
+      "timestamp": "2026-06-20T17:38:38.172917",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 61,
+      "metric_type": "accuracy",
+      "value": 0.8200000000000001,
+      "timestamp": "2026-06-20T17:38:38.172941",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 71,
+      "metric_type": "loss",
+      "value": 4.143531249999999,
+      "timestamp": "2026-06-20T17:38:38.172968",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 71,
+      "metric_type": "accuracy",
+      "value": 0.8200000000000001,
+      "timestamp": "2026-06-20T17:38:38.172996",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 81,
+      "metric_type": "loss",
+      "value": 4.1535312499999995,
+      "timestamp": "2026-06-20T17:38:38.173021",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 81,
+      "metric_type": "accuracy",
+      "value": 0.8200000000000001,
+      "timestamp": "2026-06-20T17:38:38.173044",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 91,
+      "metric_type": "loss",
+      "value": 4.163531249999999,
+      "timestamp": "2026-06-20T17:38:38.173088",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 91,
+      "metric_type": "accuracy",
+      "value": 0.8200000000000001,
+      "timestamp": "2026-06-20T17:38:38.173126",
+      "batch_size": 32,
+      "learning_rate": 0.0006561000000000001,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.0006561000000000001
+      }
+    },
+    {
+      "epoch": 4,
+      "step": 0,
+      "metric_type": "train_loss",
+      "value": 4.072531249999999,
+      "timestamp": "2026-06-20T17:38:38.173278",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 4,
+      "step": 0,
+      "metric_type": "val_loss",
+      "value": 4.4797843749999995,
+      "timestamp": "2026-06-20T17:38:38.173367",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 4,
+      "step": 0,
+      "metric_type": "train_accuracy",
+      "value": 0.8200000000000001,
+      "timestamp": "2026-06-20T17:38:38.173413",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 4,
+      "step": 0,
+      "metric_type": "val_accuracy",
+      "value": 0.8,
+      "timestamp": "2026-06-20T17:38:38.173482",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 5,
+      "step": 1,
+      "metric_type": "loss",
+      "value": 3.8699046874999987,
+      "timestamp": "2026-06-20T17:38:38.176486",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 1,
+      "metric_type": "accuracy",
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.176596",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 11,
+      "metric_type": "loss",
+      "value": 3.879904687499999,
+      "timestamp": "2026-06-20T17:38:38.176661",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 11,
+      "metric_type": "accuracy",
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.176697",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 21,
+      "metric_type": "loss",
+      "value": 3.8899046874999987,
+      "timestamp": "2026-06-20T17:38:38.176761",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 21,
+      "metric_type": "accuracy",
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.176913",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 31,
+      "metric_type": "loss",
+      "value": 3.899904687499999,
+      "timestamp": "2026-06-20T17:38:38.176952",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 31,
+      "metric_type": "accuracy",
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.177006",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 41,
+      "metric_type": "loss",
+      "value": 3.9099046874999988,
+      "timestamp": "2026-06-20T17:38:38.177036",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 41,
+      "metric_type": "accuracy",
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.177088",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 51,
+      "metric_type": "loss",
+      "value": 3.919904687499999,
+      "timestamp": "2026-06-20T17:38:38.177245",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 51,
+      "metric_type": "accuracy",
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.177304",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 61,
+      "metric_type": "loss",
+      "value": 3.9299046874999988,
+      "timestamp": "2026-06-20T17:38:38.177331",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 61,
+      "metric_type": "accuracy",
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.177377",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 71,
+      "metric_type": "loss",
+      "value": 3.939904687499999,
+      "timestamp": "2026-06-20T17:38:38.177413",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 71,
+      "metric_type": "accuracy",
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.177454",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 81,
+      "metric_type": "loss",
+      "value": 3.949904687499999,
+      "timestamp": "2026-06-20T17:38:38.177487",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 81,
+      "metric_type": "accuracy",
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.177527",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 91,
+      "metric_type": "loss",
+      "value": 3.959904687499999,
+      "timestamp": "2026-06-20T17:38:38.177562",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 91,
+      "metric_type": "accuracy",
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.177686",
+      "batch_size": 32,
+      "learning_rate": 0.00059049,
+      "additional_info": {
+        "batch_size": 32,
+        "learning_rate": 0.00059049
+      }
+    },
+    {
+      "epoch": 5,
+      "step": 0,
+      "metric_type": "train_loss",
+      "value": 3.868904687499999,
+      "timestamp": "2026-06-20T17:38:38.177732",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 5,
+      "step": 0,
+      "metric_type": "val_loss",
+      "value": 4.255795156249999,
+      "timestamp": "2026-06-20T17:38:38.177788",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 5,
+      "step": 0,
+      "metric_type": "train_accuracy",
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.177856",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    },
+    {
+      "epoch": 5,
+      "step": 0,
+      "metric_type": "val_accuracy",
+      "value": 0.88,
+      "timestamp": "2026-06-20T17:38:38.177883",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "additional_info": {}
+    }
+  ],
+  "best_epochs": {
+    "val_loss": {
+      "epoch": 5,
+      "value": 4.255795156249999,
+      "timestamp": "2026-06-20T17:38:38.177788"
+    },
+    "train_accuracy": {
+      "epoch": 5,
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.177856"
+    },
+    "loss": {
+      "epoch": 5,
+      "value": 3.8699046874999987,
+      "timestamp": "2026-06-20T17:38:38.176486"
+    },
+    "train_loss": {
+      "epoch": 5,
+      "value": 3.868904687499999,
+      "timestamp": "2026-06-20T17:38:38.177732"
+    },
+    "val_accuracy": {
+      "epoch": 5,
+      "value": 0.88,
+      "timestamp": "2026-06-20T17:38:38.177883"
+    },
+    "accuracy": {
+      "epoch": 5,
+      "value": 0.9,
+      "timestamp": "2026-06-20T17:38:38.176596"
+    }
+  }
+}
