@@ -1,0 +1,13 @@
+{
+  "total_chunks_tagged": 16,
+  "topic_distribution": {
+    "Stack": 9,
+    "Queue": 1,
+    "Linked List": 6
+  },
+  "difficulty_distribution": {
+    "Beginner": 6,
+    "Intermediate": 10
+  },
+  "generated_at": "2026-06-23T05:57:45.917759+00:00"
+}

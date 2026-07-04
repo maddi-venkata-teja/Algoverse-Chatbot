@@ -1,0 +1,210 @@
+[
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0000",
+    "text": "DSA Notes Sample - Sushanth Contribution\nStack follows LIFO principle. Push and Pop operations run in O(1) time.\nA stack is used in function call management, undo operations, and expression evaluation.",
+    "metadata": {
+      "topic": "Stack",
+      "category": "Linear Data Structure",
+      "difficulty": "Beginner",
+      "source": "dsa_notes.pdf",
+      "chapter": "Stack",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0001",
+    "text": "Queue follows FIFO principle. Enqueue and Dequeue operations run in O(1) time.\nBinary search runs in O(log n) time on a sorted array using divide and conquer.\nA graph consists of vertices and edges, traversed using DFS or BFS algorithms.",
+    "metadata": {
+      "topic": "Queue",
+      "category": "Linear Data Structure",
+      "difficulty": "Beginner",
+      "source": "dsa_notes.pdf",
+      "chapter": "Queue",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0002",
+    "text": "Linked lists allow O(1) insertion at the head but O(n) traversal to find an element.\nMerge sort runs in O(n log n) time using a divide and conquer strategy.",
+    "metadata": {
+      "topic": "Linked List",
+      "category": "Linear Data Structure",
+      "difficulty": "Intermediate",
+      "source": "dsa_notes.pdf",
+      "chapter": "Linked List",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0003",
+    "text": "Binary trees have a root, internal nodes, and leaves; traversal can be inorder, preorder, or postorder.\nStack follows LIFO principle. Push and Pop operations run in O(1) time.",
+    "metadata": {
+      "topic": "Stack",
+      "category": "Linear Data Structure",
+      "difficulty": "Intermediate",
+      "source": "dsa_notes.pdf",
+      "chapter": "Stack",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0004",
+    "text": "A stack is used in function call management, undo operations, and expression evaluation.\nQueue follows FIFO principle. Enqueue and Dequeue operations run in O(1) time.\nBinary search runs in O(log n) time on a sorted array using divide and conquer.",
+    "metadata": {
+      "topic": "Stack",
+      "category": "Linear Data Structure",
+      "difficulty": "Beginner",
+      "source": "dsa_notes.pdf",
+      "chapter": "Stack",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0005",
+    "text": "A graph consists of vertices and edges, traversed using DFS or BFS algorithms.\nLinked lists allow O(1) insertion at the head but O(n) traversal to find an element.\nMerge sort runs in O(n log n) time using a divide and conquer strategy.",
+    "metadata": {
+      "topic": "Linked List",
+      "category": "Linear Data Structure",
+      "difficulty": "Intermediate",
+      "source": "dsa_notes.pdf",
+      "chapter": "Linked List",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0006",
+    "text": "Binary trees have a root, internal nodes, and leaves; traversal can be inorder, preorder, or postorder.\nStack follows LIFO principle. Push and Pop operations run in O(1) time.",
+    "metadata": {
+      "topic": "Stack",
+      "category": "Linear Data Structure",
+      "difficulty": "Intermediate",
+      "source": "dsa_notes.pdf",
+      "chapter": "Stack",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0007",
+    "text": "A stack is used in function call management, undo operations, and expression evaluation.\nQueue follows FIFO principle. Enqueue and Dequeue operations run in O(1) time.\nBinary search runs in O(log n) time on a sorted array using divide and conquer.",
+    "metadata": {
+      "topic": "Stack",
+      "category": "Linear Data Structure",
+      "difficulty": "Beginner",
+      "source": "dsa_notes.pdf",
+      "chapter": "Stack",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0008",
+    "text": "A graph consists of vertices and edges, traversed using DFS or BFS algorithms.\nLinked lists allow O(1) insertion at the head but O(n) traversal to find an element.\nMerge sort runs in O(n log n) time using a divide and conquer strategy.",
+    "metadata": {
+      "topic": "Linked List",
+      "category": "Linear Data Structure",
+      "difficulty": "Intermediate",
+      "source": "dsa_notes.pdf",
+      "chapter": "Linked List",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0009",
+    "text": "Binary trees have a root, internal nodes, and leaves; traversal can be inorder, preorder, or postorder.\nStack follows LIFO principle. Push and Pop operations run in O(1) time.",
+    "metadata": {
+      "topic": "Stack",
+      "category": "Linear Data Structure",
+      "difficulty": "Intermediate",
+      "source": "dsa_notes.pdf",
+      "chapter": "Stack",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0010",
+    "text": "A stack is used in function call management, undo operations, and expression evaluation.\nQueue follows FIFO principle. Enqueue and Dequeue operations run in O(1) time.\nBinary search runs in O(log n) time on a sorted array using divide and conquer.",
+    "metadata": {
+      "topic": "Stack",
+      "category": "Linear Data Structure",
+      "difficulty": "Beginner",
+      "source": "dsa_notes.pdf",
+      "chapter": "Stack",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0011",
+    "text": "A graph consists of vertices and edges, traversed using DFS or BFS algorithms.\nLinked lists allow O(1) insertion at the head but O(n) traversal to find an element.\nMerge sort runs in O(n log n) time using a divide and conquer strategy.",
+    "metadata": {
+      "topic": "Linked List",
+      "category": "Linear Data Structure",
+      "difficulty": "Intermediate",
+      "source": "dsa_notes.pdf",
+      "chapter": "Linked List",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0012",
+    "text": "Binary trees have a root, internal nodes, and leaves; traversal can be inorder, preorder, or postorder.\nStack follows LIFO principle. Push and Pop operations run in O(1) time.",
+    "metadata": {
+      "topic": "Stack",
+      "category": "Linear Data Structure",
+      "difficulty": "Intermediate",
+      "source": "dsa_notes.pdf",
+      "chapter": "Stack",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0013",
+    "text": "A stack is used in function call management, undo operations, and expression evaluation.\nQueue follows FIFO principle. Enqueue and Dequeue operations run in O(1) time.\nBinary search runs in O(log n) time on a sorted array using divide and conquer.",
+    "metadata": {
+      "topic": "Stack",
+      "category": "Linear Data Structure",
+      "difficulty": "Beginner",
+      "source": "dsa_notes.pdf",
+      "chapter": "Stack",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0014",
+    "text": "A graph consists of vertices and edges, traversed using DFS or BFS algorithms.\nLinked lists allow O(1) insertion at the head but O(n) traversal to find an element.\nMerge sort runs in O(n log n) time using a divide and conquer strategy.",
+    "metadata": {
+      "topic": "Linked List",
+      "category": "Linear Data Structure",
+      "difficulty": "Intermediate",
+      "source": "dsa_notes.pdf",
+      "chapter": "Linked List",
+      "source_type": "text"
+    }
+  },
+  {
+    "source": "dsa_notes.pdf",
+    "chunk_id": "dsa_notes_0015",
+    "text": "Binary trees have a root, internal nodes, and leaves; traversal can be inorder, preorder, or postorder.",
+    "metadata": {
+      "topic": "Linked List",
+      "category": "Linear Data Structure",
+      "difficulty": "Intermediate",
+      "source": "dsa_notes.pdf",
+      "chapter": "Linked List",
+      "source_type": "text"
+    }
+  }
+]
