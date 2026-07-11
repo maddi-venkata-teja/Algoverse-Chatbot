@@ -1,0 +1,45 @@
+{
+  "week": 2,
+  "task": "BitsAndBytes Configuration",
+  "member": "R. Jeetesh Kumar",
+  "hardware_used": {
+    "recommended_dtype": "fp16",
+    "gpu_name": "Unknown GPU",
+    "vram_total_GB": 0,
+    "bf16_supported": false
+  },
+  "bnb_config": {
+    "load_in_4bit": true,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "fp16"
+  },
+  "memory_savings": {
+    "fp32": {
+      "bytes_per_param": 4.0,
+      "vram_needed_GB": 14.16,
+      "fits_on_gpu": "unknown"
+    },
+    "fp16": {
+      "bytes_per_param": 2.0,
+      "vram_needed_GB": 7.08,
+      "fits_on_gpu": "unknown"
+    },
+    "bf16": {
+      "bytes_per_param": 2.0,
+      "vram_needed_GB": 7.08,
+      "fits_on_gpu": "unknown"
+    },
+    "int8": {
+      "bytes_per_param": 1.0,
+      "vram_needed_GB": 3.54,
+      "fits_on_gpu": "unknown"
+    },
+    "int4": {
+      "bytes_per_param": 0.5,
+      "vram_needed_GB": 1.77,
+      "fits_on_gpu": "unknown"
+    }
+  },
+  "how_to_use": "Pass bnb_config into FastLanguageModel.from_pretrained() as the quantization_config parameter. This replaces the default load_in_4bit=True in algoverse.ipynb with a fully explicit and documented config."
+}

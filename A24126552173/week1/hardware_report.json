@@ -1,0 +1,36 @@
+{
+  "cpu": {
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "physical_cores": 8,
+    "logical_cores": 16,
+    "max_freq_GHz": 2.0,
+    "current_usage_%": 4.5,
+    "architecture": "AMD64"
+  },
+  "ram": {
+    "total_GB": 13.84,
+    "available_GB": 4.06,
+    "used_GB": 9.78,
+    "usage_%": 70.7,
+    "sufficient_for_model": true
+  },
+  "gpu": {
+    "available": false,
+    "reason": "No CUDA GPU detected"
+  },
+  "disk": {
+    "total_GB": 262.6,
+    "free_GB": 45.1,
+    "used_%": 82.8,
+    "write_speed_MBps": "N/A"
+  },
+  "verdict": {
+    "status": "NOT READY \u2717",
+    "issues": [
+      "No GPU found \u2014 Unsloth fine-tuning REQUIRES a CUDA GPU."
+    ],
+    "warnings": [],
+    "recommended_dtype": "fp16",
+    "timestamp": "2026-05-29 11:17:57"
+  }
+}

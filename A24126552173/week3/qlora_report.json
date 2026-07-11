@@ -1,0 +1,52 @@
+{
+  "week": 3,
+  "task": "QLoRA Optimization",
+  "member": "R. Jeetesh Kumar",
+  "timestamp": "2026-06-06 14:13:50",
+  "pipeline_connection": {
+    "week1_contribution": "Hardware benchmark \u2192 recommended dtype for training",
+    "week2_contribution": "BitsAndBytes config \u2192 4-bit base model (1.8 GB)",
+    "week3_contribution": "QLoRA adapters \u2192 ~8M trainable params injected"
+  },
+  "lora_config": {
+    "rank": 16,
+    "lora_alpha": 32,
+    "scale": 2.0,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "dropout": 0,
+    "bias": "none",
+    "gradient_checkpointing": "unsloth"
+  },
+  "adapter_stats": {
+    "trainable_params": "~8M",
+    "frozen_params": "~3.8B",
+    "trainable_pct": 0.2,
+    "adapter_vram_fp16": "~16 MB"
+  },
+  "vram_breakdown_mb": {
+    "base_model_mb": 1800,
+    "adapters_mb": 16,
+    "gradients_mb": 16,
+    "optimizer_mb": 64,
+    "activations_mb": 54,
+    "framework_mb": 300,
+    "total_mb": 2250,
+    "total_gb": 2.2
+  },
+  "training_config": {
+    "batch_size": 4,
+    "epochs": 1,
+    "learning_rate": "2e-4",
+    "optimizer": "adamw_8bit",
+    "dtype": "fp16",
+    "seq_length": 2048
+  },
+  "what_not_quantized": {
+    "adapters_stay_fp16": true,
+    "reason": "Adapters are actively learning \u2014 quantizing to 4-bit would lose gradient precision and break training. Only frozen weights (base model) are safe to quantize."
+  },
+  "for_week4_team": "Model adapter saved at outputs/. Load with FastLanguageModel.from_pretrained() + PeftModel. Run stress tests using the algoverse chat UI on Colab."
+}
