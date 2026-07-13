@@ -1,0 +1,342 @@
+[
+    {
+        "instruction": "Critically evaluate the design limitations of a Stack and discuss mitigation strategies used in production systems.",
+        "response": "Design limitations of Stack: fixed stack depth on CPU stack; no random access; not suitable for FIFO workloads.\nMitigation strategies used in practice: use heap-allocated explicit stack for deep recursion; augment with min/max tracking for O(1) queries.\nProduction example: Python's ast module uses an explicit stack to evaluate expression trees iteratively.",
+        "metadata": {
+            "concept": "Stack",
+            "category": "Abstract",
+            "query_type": "tradeoff",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Explain the internal structure and memory layout of a B-Tree.",
+        "response": "Internally, a B-Tree stores elements nodes hold up to 2t-1 keys and 2t children; all leaves at the same depth; order t chosen to match disk page size. a self-balancing search tree where nodes can have multiple keys and children, designed to minimize disk I/O by keeping the tree shallow and nodes large. Memory is allocated node size chosen to match OS page (4KB-16KB); one node read = one disk I/O. Key structural properties: height = O(log_t n); all ops = O(log n) disk I/Os; nodes always between half-full and full.",
+        "metadata": {
+            "concept": "B-Tree",
+            "category": "Tree",
+            "query_type": "definition",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "What are the main advantages and disadvantages of using a B-Tree?",
+        "response": "Advantages of B-Tree:\n- Minimizes disk I/Os\nSelf-balancing\nExcellent for range queries (B+ variant)\n\nDisadvantages:\n- Complex split/merge logic\nOverkill for in-memory use (binary heap or BST preferable)\nHigh implementation complexity",
+        "metadata": {
+            "concept": "B-Tree",
+            "category": "Tree",
+            "query_type": "tradeoff",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Critically evaluate the design limitations of a Skip List and discuss mitigation strategies used in production systems.",
+        "response": "Design limitations of Skip List: no deterministic worst-case; memory overhead scales with max_level; tuning p affects balance.\nMitigation strategies used in practice: cap max_level at log(n); use p=0.25 to halve average pointers; deterministic variant for real-time systems.\nProduction example: Redis ZADD/ZRANGEBYSCORE use a skip list because its range-query and lock-free properties suit in-memory sorted sets.",
+        "metadata": {
+            "concept": "Skip List",
+            "category": "Linked",
+            "query_type": "tradeoff",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Give a simple real-world example where a B-Tree is useful.",
+        "response": "A simple use case for B-Tree: a database storing millions of customer records indexed by ID. This works well because B-tree keeps the index shallow so finding any record requires only 2-3 disk reads.",
+        "metadata": {
+            "concept": "B-Tree",
+            "category": "Tree",
+            "query_type": "use_case",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Compare the average-case and worst-case time complexities for all operations on a Leftist Heap.",
+        "response": "Full complexity profile for Leftist Heap:\n  - Merge two heaps: O(log n)\n  - Insert: O(log n) (merge with singleton)\n  - Extract min: O(log n) (merge left and right subtrees)\n  - Find min: O(1)\nSpace complexity: O(n) with rank field per node.\nNote: Merge is the primitive \u2014 insert and extract are just special merges. Right spine <= log n by rank invariant..",
+        "metadata": {
+            "concept": "Leftist Heap",
+            "category": "Heap",
+            "query_type": "complexity",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "What are the basic time complexities for common operations on a Adjacency Matrix?",
+        "response": "For a Adjacency Matrix, the basic operation costs are:\n  - Check edge (u,v): O(1)\n  - Add/remove edge: O(1)\n  - Get neighbors of v: O(V)\nSpace used: O(V^2).",
+        "metadata": {
+            "concept": "Adjacency Matrix",
+            "category": "Graph",
+            "query_type": "complexity",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "What are the main advantages and disadvantages of using a Adjacency List?",
+        "response": "Advantages of Adjacency List:\n- O(V+E) space \u2014 optimal for sparse graphs\nO(V+E) traversal\nNatural for variable-degree vertices\n\nDisadvantages:\n- O(degree) edge existence check (vs O(1) for matrix)\nCache-unfriendly for dense neighbor lists\nRemove edge O(degree)",
+        "metadata": {
+            "concept": "Adjacency List",
+            "category": "Graph",
+            "query_type": "tradeoff",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "What are the basic time complexities for common operations on a Singly Linked List?",
+        "response": "For a Singly Linked List, the basic operation costs are:\n  - Insert at head: O(1)\n  - Delete head: O(1)\n  - Search: O(n)\n  - Insert at tail: O(n)\nSpace used: O(n) plus O(n) pointer overhead.",
+        "metadata": {
+            "concept": "Singly Linked List",
+            "category": "Linked",
+            "query_type": "complexity",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "In what types of software systems is a Union-Find commonly used, and why?",
+        "response": "Union-Find is commonly used in: Kruskal's MST, network connectivity, image segmentation, online cycle detection, percolation theory. It fits these systems because near-O(1) union and connectivity check makes it the ideal primitive for graph connectivity problems.",
+        "metadata": {
+            "concept": "Union-Find",
+            "category": "Graph",
+            "query_type": "use_case",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "What are the basic time complexities for common operations on a Union-Find?",
+        "response": "For a Union-Find, the basic operation costs are:\n  - Find: O(alpha(n)) ~= O(1)\n  - Union: O(alpha(n)) ~= O(1)\n  - Connected?: O(alpha(n))\nSpace used: O(n).",
+        "metadata": {
+            "concept": "Union-Find",
+            "category": "Graph",
+            "query_type": "complexity",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Compare the average-case and worst-case time complexities for all operations on a Binary Search Tree.",
+        "response": "Full complexity profile for Binary Search Tree:\n  - Search/insert/delete: O(h)\n  - Min/max: O(h)\n  - Successor/predecessor: O(h)\n  - In-order traversal: O(n)\nSpace complexity: O(n).\nNote: Degenerate BST (sorted insertion) becomes a linked list with O(n) ops \u2014 motivates AVL and Red-Black trees.",
+        "metadata": {
+            "concept": "Binary Search Tree",
+            "category": "Tree",
+            "query_type": "complexity",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Analyze the architectural trade-offs that make a Queue preferable over alternatives in high-performance systems.",
+        "response": "In high-performance systems, Queue is chosen over alternatives when a multi-threaded task executor needs a lock-free work queue shared across 32 worker threads. Trade-off rationale: Michael-Scott lock-free queue uses CAS operations to allow concurrent enqueue and dequeue without mutex contention. Real-world examples: Java ConcurrentLinkedQueue, Linux task_struct run queue, Node.js event loop microtask queue.",
+        "metadata": {
+            "concept": "Queue",
+            "category": "Abstract",
+            "query_type": "use_case",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Critically evaluate the design limitations of a Dynamic Array and discuss mitigation strategies used in production systems.",
+        "response": "Design limitations of Dynamic Array: memory spikes during resize; fragmentation if many small arrays exist; middle insert is O(n).\nMitigation strategies used in practice: pre-reserve capacity when final size is estimable; use deque for O(1) front inserts.\nProduction example: Rust's Vec doubles capacity and uses raw pointer arithmetic for zero-overhead indexing.",
+        "metadata": {
+            "concept": "Dynamic Array",
+            "category": "Linear",
+            "query_type": "tradeoff",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Critically evaluate the design limitations of a Circular Buffer and discuss mitigation strategies used in production systems.",
+        "response": "Design limitations of Circular Buffer: fixed size requires capacity planning; overflow policy (drop/block/overwrite) must be chosen at design time.\nMitigation strategies used in practice: double-capacity on overflow for soft real-time; use backpressure signaling in streaming pipelines.\nProduction example: Linux io_uring uses a pair of circular buffers (SQ/CQ) for zero-syscall I/O submission.",
+        "metadata": {
+            "concept": "Circular Buffer",
+            "category": "Linear",
+            "query_type": "tradeoff",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Describe the theoretical model and invariants that define a Stack.",
+        "response": "The Stack is formally defined as a Abstract abstract data type where a last-in, first-out (LIFO) abstract data type where elements are inserted and removed from the same end, called the top. Its invariants include: only the top element is accessible; push and pop maintain LIFO invariant. Theoretical guarantees: Stacks are the computational model behind recursion \u2014 call stacks implement function invocation as a stack.",
+        "metadata": {
+            "concept": "Stack",
+            "category": "Abstract",
+            "query_type": "definition",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Derive and justify the amortized time complexity for operations on a B-Tree, noting any edge cases.",
+        "response": "Amortized and worst-case analysis for B-Tree:\n  - B+ tree variant: all data in leaves + leaf linked list enables O(log n + k) range scan\n  - Copy-on-write B-tree: used in BTRFS/ZFS for atomic updates\n  - Fractal tree: buffers writes in nodes for O(log^2 n / B) I/Os amortized\nSpace: O(n) keys with O(n/t) nodes.\nDerivation insight: Each split/merge propagates at most to root; total work per insert/delete is O(log_t n) node reads/writes.",
+        "metadata": {
+            "concept": "B-Tree",
+            "category": "Tree",
+            "query_type": "complexity",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Give a simple real-world example where a Binary Search Tree is useful.",
+        "response": "A simple use case for Binary Search Tree: storing a dictionary of words and looking them up alphabetically. This works well because BST search halves the search space at each step, like binary search but for dynamic data.",
+        "metadata": {
+            "concept": "Binary Search Tree",
+            "category": "Tree",
+            "query_type": "use_case",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Give a simple real-world example where a Cuckoo Hash Table is useful.",
+        "response": "A simple use case for Cuckoo Hash Table: a lookup table where guaranteed constant-time reads are critical (e.g., packet classification). This works well because cuckoo hashing guarantees at most 2 memory accesses per lookup \u2014 no worst-case linear chain.",
+        "metadata": {
+            "concept": "Cuckoo Hash Table",
+            "category": "Hashing",
+            "query_type": "use_case",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Compare the average-case and worst-case time complexities for all operations on a Sparse Array.",
+        "response": "Full complexity profile for Sparse Array:\n  - Get: O(1) avg hash / O(log k) sorted\n  - Set: O(1) avg hash / O(log k) sorted\n  - Row/column slice: O(k)\n  - Matrix-vector multiply: O(k)\nSpace complexity: O(k) where k = number of non-zero elements.\nNote: Break-even with dense array at ~30-50% density; below that, sparse wins on both space and compute.",
+        "metadata": {
+            "concept": "Sparse Array",
+            "category": "Linear",
+            "query_type": "complexity",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Explain the internal structure and memory layout of a Binary Heap.",
+        "response": "Internally, a Binary Heap stores elements packed array: root at index 1; for node i, left child = 2i, right child = 2i+1, parent = i//2. a complete binary tree stored as an array where every parent node is smaller (min-heap) or larger (max-heap) than its children. Memory is allocated single contiguous array \u2014 no pointers; cache-friendly; child index computed arithmetically. Key structural properties: O(log n) insert/extract, O(1) peek, O(n) build; complete tree guarantees height = floor(log n).",
+        "metadata": {
+            "concept": "Binary Heap",
+            "category": "Heap",
+            "query_type": "definition",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "What are the basic time complexities for common operations on a Doubly Linked List?",
+        "response": "For a Doubly Linked List, the basic operation costs are:\n  - Insert at head/tail: O(1)\n  - Delete given node: O(1)\n  - Traverse: O(n)\n  - Search: O(n)\nSpace used: O(n) with 2x pointer overhead vs singly linked.",
+        "metadata": {
+            "concept": "Doubly Linked List",
+            "category": "Linked",
+            "query_type": "complexity",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Compare Trie to a closely related data structure, highlighting when you would prefer each.",
+        "response": "Comparing Trie to Hash Table:\n- Prefer Trie when: prefix queries, autocomplete, or longest-prefix match are needed\n- Prefer Hash Table when: only exact-match lookup is needed \u2014 hash table is simpler and faster\nKey difference: Trie enables prefix queries in O(L); hash table supports only exact match in O(L) but with lower constant.",
+        "metadata": {
+            "concept": "Trie",
+            "category": "Hashing",
+            "query_type": "tradeoff",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "In what types of software systems is a Leftist Heap commonly used, and why?",
+        "response": "Leftist Heap is commonly used in: mergeable heap applications, event simulation, discrete-event simulators, Prim's MST with repeated merges. It fits these systems because O(log n) merge makes it the right choice when priority queues themselves need to be combined frequently.",
+        "metadata": {
+            "concept": "Leftist Heap",
+            "category": "Heap",
+            "query_type": "use_case",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Compare Dynamic Array to a closely related data structure, highlighting when you would prefer each.",
+        "response": "Comparing Dynamic Array to Linked List:\n- Prefer Dynamic Array when: indexed access or iteration performance is critical\n- Prefer Linked List when: frequent mid-list insertions/deletions are needed\nKey difference: Dynamic array wins on read and cache; linked list wins on arbitrary insert.",
+        "metadata": {
+            "concept": "Dynamic Array",
+            "category": "Linear",
+            "query_type": "tradeoff",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "What are the basic time complexities for common operations on a Priority Queue?",
+        "response": "For a Priority Queue, the basic operation costs are:\n  - Insert: O(log n)\n  - Extract min/max: O(log n)\n  - Peek min/max: O(1)\nSpace used: O(n).",
+        "metadata": {
+            "concept": "Priority Queue",
+            "category": "Abstract",
+            "query_type": "complexity",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Analyze the architectural trade-offs that make a Red-Black Tree preferable over alternatives in high-performance systems.",
+        "response": "In high-performance systems, Red-Black Tree is chosen over alternatives when a kernel scheduler needs to insert/remove tasks with O(log n) guarantee and minimal structural changes. Trade-off rationale: Red-Black's O(1) amortized rotations keep cache invalidation minimal in hot scheduler paths. Real-world examples: Linux CFS (Completely Fair Scheduler) uses a Red-Black tree keyed by virtual runtime.",
+        "metadata": {
+            "concept": "Red-Black Tree",
+            "category": "Tree",
+            "query_type": "use_case",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "What are the basic time complexities for common operations on a B-Tree?",
+        "response": "For a B-Tree, the basic operation costs are:\n  - Search: O(log n) disk I/Os\n  - Insert: O(log n) disk I/Os\n  - Delete: O(log n) disk I/Os\nSpace used: O(n) keys with O(n/t) nodes.",
+        "metadata": {
+            "concept": "B-Tree",
+            "category": "Tree",
+            "query_type": "complexity",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Explain the internal structure and memory layout of a Singly Linked List.",
+        "response": "Internally, a Singly Linked List stores elements as scattered heap nodes; each node = {value, *next}; no contiguous memory. a sequence of nodes where each node holds a value and a pointer to the next node, with the last node pointing to null. Memory is allocated dynamically on the heap per node; pointer overhead adds 8 bytes per node on 64-bit systems. Key structural properties: O(1) head insert/delete, O(n) traversal, no random access.",
+        "metadata": {
+            "concept": "Singly Linked List",
+            "category": "Linked",
+            "query_type": "definition",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Describe the theoretical model and invariants that define a Binary Heap.",
+        "response": "The Binary Heap is formally defined as a Heap abstract data type where a complete binary tree stored as an array where every parent node is smaller (min-heap) or larger (max-heap) than its children. Its invariants include: heap property: A[i] <= A[2i] and A[i] <= A[2i+1] for all i (min-heap); tree is complete. Theoretical guarantees: Floyd's build-heap is O(n) not O(n log n): most nodes are near leaves with small sift-down cost.",
+        "metadata": {
+            "concept": "Binary Heap",
+            "category": "Heap",
+            "query_type": "definition",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "What are the main advantages and disadvantages of using a Union-Find?",
+        "response": "Advantages of Union-Find:\n- Near-O(1) union and find\nExtremely simple to implement\nO(n) space \u2014 no pointers beyond parent array\n\nDisadvantages:\n- No split operation (once merged, can't unmerge)\nNo enumeration of set elements in O(set size)\nOnly supports equivalence partitions",
+        "metadata": {
+            "concept": "Union-Find",
+            "category": "Graph",
+            "query_type": "tradeoff",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Compare the average-case and worst-case time complexities for all operations on a Segment Tree.",
+        "response": "Full complexity profile for Segment Tree:\n  - Build: O(n)\n  - Range query [l,r]: O(log n)\n  - Point update: O(log n)\n  - Range update + lazy propagation: O(log n)\n  - Any associative function (sum, min, GCD, XOR): O(log n)\nSpace complexity: O(n) for standard; O(n log n) for persistent/merge sort tree.\nNote: Any associative binary operation works as the combine function \u2014 segment tree is a generic range-query structure.",
+        "metadata": {
+            "concept": "Segment Tree",
+            "category": "Graph",
+            "query_type": "complexity",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Compare the average-case and worst-case time complexities for all operations on a Red-Black Tree.",
+        "response": "Full complexity profile for Red-Black Tree:\n  - All ops: O(log n) worst case\n  - Insert: at most 2 rotations + O(log n) recolors\n  - Delete: at most 3 rotations + O(log n) recolors\nSpace complexity: O(n).\nNote: Height <= 2 log(n+1); in practice closer to 1.7 log n for random data.",
+        "metadata": {
+            "concept": "Red-Black Tree",
+            "category": "Tree",
+            "query_type": "complexity",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Describe the theoretical model and invariants that define a Queue.",
+        "response": "The Queue is formally defined as a Abstract abstract data type where a first-in, first-out (FIFO) abstract data type where elements are added at the rear and removed from the front. Its invariants include: elements exit in the same order they enter; front and rear maintained as separate pointers. Theoretical guarantees: FIFO queues are the scheduling primitive behind BFS and most OS process schedulers.",
+        "metadata": {
+            "concept": "Queue",
+            "category": "Abstract",
+            "query_type": "definition",
+            "difficulty": "advanced"
+        }
+    }
+]

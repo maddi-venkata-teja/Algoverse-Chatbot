@@ -1,0 +1,342 @@
+[
+    {
+        "instruction": "In what types of software systems is a Skip List commonly used, and why?",
+        "response": "Skip List is commonly used in: Redis sorted sets (ZSET), in-memory databases, concurrent priority queues, range indexes. It fits these systems because O(log n) expected ops + simple implementation + cache-friendlier than trees for range queries.",
+        "metadata": {
+            "concept": "Skip List",
+            "category": "Linked",
+            "query_type": "use_case",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Derive and justify the amortized time complexity for operations on a Union-Find, noting any edge cases.",
+        "response": "Amortized and worst-case analysis for Union-Find:\n  - alpha(n) < 5 for all practical n \u2014 truly constant in practice\n  - Path compression + union by rank: proven optimal for pointer-based union-find\n  - Offline connectivity: Kruskal's MST uses union-find in O(E log E) total\nSpace: O(n).\nDerivation insight: Path compression amortizes find cost: a long chain is flattened after first traversal, making future finds O(1).",
+        "metadata": {
+            "concept": "Union-Find",
+            "category": "Graph",
+            "query_type": "complexity",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Give a simple real-world example where a Red-Black Tree is useful.",
+        "response": "A simple use case for Red-Black Tree: a dynamic set of unique usernames that needs fast insert, delete, and search. This works well because Red-Black tree guarantees O(log n) for all three operations regardless of insertion order.",
+        "metadata": {
+            "concept": "Red-Black Tree",
+            "category": "Tree",
+            "query_type": "use_case",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "What is a Segment Tree and how does it work?",
+        "response": "A Segment Tree is a Graph data structure. a tree where each node stores the result of a query (sum, min, max) over a contiguous subarray, enabling O(log n) range queries and point updates. Think of it like a corporate org chart where every manager's node stores a summary (e.g., total headcount) of their entire subtree. You interact with it mainly through: build(array), query(l, r), update(i, val).",
+        "metadata": {
+            "concept": "Segment Tree",
+            "category": "Graph",
+            "query_type": "definition",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "What are the main advantages and disadvantages of using a Skip List?",
+        "response": "Advantages of Skip List:\n- O(log n) expected ops without rotations\nSimple implementation vs balanced trees\nNatural support for range queries\n\nDisadvantages:\n- Probabilistic \u2014 no worst-case guarantee\nHigher memory than BST (multiple pointers per node)\nNot cache-friendly",
+        "metadata": {
+            "concept": "Skip List",
+            "category": "Linked",
+            "query_type": "tradeoff",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "What are the basic time complexities for common operations on a Array?",
+        "response": "For a Array, the basic operation costs are:\n  - Access: O(1)\n  - Search (unsorted): O(n)\n  - Insert/Delete (end): O(1)\n  - Insert/Delete (middle): O(n)\nSpace used: O(n).",
+        "metadata": {
+            "concept": "Array",
+            "category": "Linear",
+            "query_type": "complexity",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Compare Priority Queue to a closely related data structure, highlighting when you would prefer each.",
+        "response": "Comparing Priority Queue to Sorted Array:\n- Prefer Priority Queue when: frequent insertions mixed with extractions are needed\n- Prefer Sorted Array when: data is static and only extraction is needed (sorted array suffices)\nKey difference: Priority queue handles mixed insert/extract in O(log n); sorted array gives O(1) extract but O(n) insert.",
+        "metadata": {
+            "concept": "Priority Queue",
+            "category": "Abstract",
+            "query_type": "tradeoff",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Explain the internal structure and memory layout of a Adjacency Matrix.",
+        "response": "Internally, a Adjacency Matrix stores elements 2D array A[V][V]; A[i][j] = weight or 1; symmetric for undirected graphs. a V*V matrix where entry [i][j] = 1 (or weight) if there is an edge from vertex i to vertex j, 0 otherwise. Memory is allocated O(V^2) always \u2014 wasteful for sparse graphs; efficient when E ~= V^2. Key structural properties: O(1) edge existence check, O(V) neighbor iteration, O(V^2) space.",
+        "metadata": {
+            "concept": "Adjacency Matrix",
+            "category": "Graph",
+            "query_type": "definition",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Explain the internal structure and memory layout of a Leftist Heap.",
+        "response": "Internally, a Leftist Heap stores elements nodes = {key, *left, *right, rank}; rank = length of rightmost path to null; skewed left by construction. a heap-ordered binary tree where every node's left subtree has rank (rightmost path length) >= right subtree rank, enabling O(log n) merging. Memory is allocated O(n) nodes with rank field; pointer-based \u2014 no array backing; less cache-friendly than binary heap. Key structural properties: O(log n) merge/insert/extract; right spine has length <= log(n+1); all ops reduce to merge.",
+        "metadata": {
+            "concept": "Leftist Heap",
+            "category": "Heap",
+            "query_type": "definition",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Compare the average-case and worst-case time complexities for all operations on a Queue.",
+        "response": "Full complexity profile for Queue:\n  - Enqueue: O(1) amortized\n  - Dequeue: O(1)\n  - Front/rear peek: O(1)\n  - Size: O(1)\n  - Search: O(n)\nSpace complexity: O(n).\nNote: Array-backed queue requires circular indexing to avoid O(n) shifts on dequeue.",
+        "metadata": {
+            "concept": "Queue",
+            "category": "Abstract",
+            "query_type": "complexity",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Compare Fibonacci Heap to a closely related data structure, highlighting when you would prefer each.",
+        "response": "Comparing Fibonacci Heap to Binary Heap:\n- Prefer Fibonacci Heap when: theoretical optimality matters or dense-graph algorithm complexity must be minimized\n- Prefer Binary Heap when: practical performance is needed \u2014 binary heap almost always wins in benchmarks\nKey difference: Fibonacci heap is theoretically optimal; binary heap is practically faster due to cache and simplicity.",
+        "metadata": {
+            "concept": "Fibonacci Heap",
+            "category": "Heap",
+            "query_type": "tradeoff",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Critically evaluate the design limitations of a Segment Tree and discuss mitigation strategies used in production systems.",
+        "response": "Design limitations of Segment Tree: 4n memory; more complex than BIT for simple sum queries; persistent variant uses O(n log n) memory.\nMitigation strategies used in practice: use Fenwick tree when possible; use lazy segment tree only when range updates are needed.\nProduction example: Competitive programming libraries universally use segment trees for O(log n) range queries.",
+        "metadata": {
+            "concept": "Segment Tree",
+            "category": "Graph",
+            "query_type": "tradeoff",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Derive and justify the amortized time complexity for operations on a Stack, noting any edge cases.",
+        "response": "Amortized and worst-case analysis for Stack:\n  - Array-backed push: O(1) amortized by doubling\n  - Min-stack augmentation: O(1) min query by maintaining parallel min stack\n  - Persistent stack: O(1) push/pop with O(n) total space via structural sharing\nSpace: O(n).\nDerivation insight: Array-backed push is O(1) amortized; each resize costs O(n) but happens at most once per n pushes.",
+        "metadata": {
+            "concept": "Stack",
+            "category": "Abstract",
+            "query_type": "complexity",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Critically evaluate the design limitations of a Cuckoo Hash Table and discuss mitigation strategies used in production systems.",
+        "response": "Design limitations of Cuckoo Hash Table: 50% load cap wastes memory; rare but O(n) rehash; more complex than open addressing.\nMitigation strategies used in practice: use d > 2 hash functions to push load factor to 90%+ while keeping rehash probability negligible.\nProduction example: DPDK rte_hash (used in major cloud providers' virtual switches) uses 4-way cuckoo hashing for sub-microsecond flow lookups.",
+        "metadata": {
+            "concept": "Cuckoo Hash Table",
+            "category": "Hashing",
+            "query_type": "tradeoff",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Explain the internal structure and memory layout of a Dynamic Array.",
+        "response": "Internally, a Dynamic Array stores elements contiguously; capacity is tracked separately from length, with unused slots at the end. a resizable array that automatically grows by allocating a larger block and copying elements when capacity is exceeded. Memory is allocated on the heap; a new allocation 2x the old size is made on overflow, then elements are copied. Key structural properties: amortized O(1) append, O(1) random access, O(n) worst-case resize.",
+        "metadata": {
+            "concept": "Dynamic Array",
+            "category": "Linear",
+            "query_type": "definition",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Analyze the architectural trade-offs that make a Adjacency Matrix preferable over alternatives in high-performance systems.",
+        "response": "In high-performance systems, Adjacency Matrix is chosen over alternatives when computing all-pairs shortest paths on a dense graph (E ~= V^2) using Floyd-Warshall. Trade-off rationale: adjacency matrix maps directly to the Floyd-Warshall DP table \u2014 no conversion needed, O(V^3) with minimal overhead. Real-world examples: graph neural networks (GNN) use adjacency matrices for message passing; Floyd-Warshall in routing protocol implementations.",
+        "metadata": {
+            "concept": "Adjacency Matrix",
+            "category": "Graph",
+            "query_type": "use_case",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Give a simple real-world example where a Bloom Filter is useful.",
+        "response": "A simple use case for Bloom Filter: checking if a URL has been visited before in a web crawler. This works well because Bloom filter uses tiny memory and quickly rules out unvisited URLs; rare false positives just cause a redundant visit.",
+        "metadata": {
+            "concept": "Bloom Filter",
+            "category": "Hashing",
+            "query_type": "use_case",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Critically evaluate the design limitations of a Queue and discuss mitigation strategies used in production systems.",
+        "response": "Design limitations of Queue: no priority; fixed-size circular buffer requires overflow handling; head-of-line blocking in single queues.\nMitigation strategies used in practice: use priority queue for prioritized workloads; use multiple queues (multi-level feedback queue) for scheduling.\nProduction example: Linux CFS scheduler uses a red-black tree as a priority queue, not a plain FIFO queue.",
+        "metadata": {
+            "concept": "Queue",
+            "category": "Abstract",
+            "query_type": "tradeoff",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "What are the basic time complexities for common operations on a Queue?",
+        "response": "For a Queue, the basic operation costs are:\n  - Enqueue: O(1)\n  - Dequeue: O(1)\n  - Peek: O(1)\n  - Search: O(n)\nSpace used: O(n).",
+        "metadata": {
+            "concept": "Queue",
+            "category": "Abstract",
+            "query_type": "complexity",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Critically evaluate the design limitations of a Sparse Array and discuss mitigation strategies used in production systems.",
+        "response": "Design limitations of Sparse Array: hash-based sparse arrays have poor cache behavior; format conversion (COO<->CSR) is expensive.\nMitigation strategies used in practice: use CSR for row-access patterns, CSC for column-access; choose format at construction based on access pattern.\nProduction example: Google's PageRank operates on a sparse adjacency matrix with billions of rows but only ~10 non-zeros per row.",
+        "metadata": {
+            "concept": "Sparse Array",
+            "category": "Linear",
+            "query_type": "tradeoff",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "What are the basic time complexities for common operations on a Dynamic Array?",
+        "response": "For a Dynamic Array, the basic operation costs are:\n  - Access: O(1)\n  - Append: O(1) amortized\n  - Insert/Delete middle: O(n)\n  - Search: O(n)\nSpace used: O(n) with up to 2x wasted capacity.",
+        "metadata": {
+            "concept": "Dynamic Array",
+            "category": "Linear",
+            "query_type": "complexity",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Compare the average-case and worst-case time complexities for all operations on a Dynamic Array.",
+        "response": "Full complexity profile for Dynamic Array:\n  - Access: O(1)\n  - Append: O(1) amortized, O(n) worst case\n  - Insert at index k: O(n-k)\n  - Pop last: O(1)\n  - Search: O(n) unsorted\nSpace complexity: O(n) with up to 2x wasted capacity.\nNote: Worst-case append is O(n) but occurs at most once every n ops; amortized cost is O(1).",
+        "metadata": {
+            "concept": "Dynamic Array",
+            "category": "Linear",
+            "query_type": "complexity",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "What is a Min-Max Heap and how does it work?",
+        "response": "A Min-Max Heap is a Heap data structure. a double-ended priority queue stored as a heap where both the minimum and maximum can be found and extracted in O(log n). Think of it like a two-sided scoreboard that always shows both the lowest and highest scores simultaneously. You interact with it mainly through: insert, find_min, find_max, extract_min, extract_max.",
+        "metadata": {
+            "concept": "Min-Max Heap",
+            "category": "Heap",
+            "query_type": "definition",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Describe the theoretical model and invariants that define a Adjacency Matrix.",
+        "response": "The Adjacency Matrix is formally defined as a Graph abstract data type where a V*V matrix where entry [i][j] = 1 (or weight) if there is an edge from vertex i to vertex j, 0 otherwise. Its invariants include: A[i][j] >= 0; A[i][i] = 0 (no self-loops unless explicitly allowed); symmetric for undirected. Theoretical guarantees: Matrix representation enables algebraic graph algorithms: A^k counts paths of length k (matrix exponentiation).",
+        "metadata": {
+            "concept": "Adjacency Matrix",
+            "category": "Graph",
+            "query_type": "definition",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Analyze the architectural trade-offs that make a Sparse Array preferable over alternatives in high-performance systems.",
+        "response": "In high-performance systems, Sparse Array is chosen over alternatives when training a recommender system where the user-item rating matrix has less than 0.1% density. Trade-off rationale: sparse formats reduce memory by 1000x and enable vectorized SpMV, making gradient computation tractable. Real-world examples: SciPy CSR matrix, TensorFlow SparseTensor, PyTorch sparse_coo_tensor.",
+        "metadata": {
+            "concept": "Sparse Array",
+            "category": "Linear",
+            "query_type": "use_case",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "What are the basic time complexities for common operations on a Cuckoo Hash Table?",
+        "response": "For a Cuckoo Hash Table, the basic operation costs are:\n  - Lookup: O(1) worst case (2 checks)\n  - Insert: O(1) amortized\n  - Delete: O(1)\nSpace used: O(n) with ~50% load factor (2x slots).",
+        "metadata": {
+            "concept": "Cuckoo Hash Table",
+            "category": "Hashing",
+            "query_type": "complexity",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Compare the average-case and worst-case time complexities for all operations on a Singly Linked List.",
+        "response": "Full complexity profile for Singly Linked List:\n  - Insert/delete at head: O(1)\n  - Insert/delete at tail: O(n) without tail pointer, O(1) with\n  - Search by value: O(n)\n  - Access by index: O(n)\nSpace complexity: O(n) plus O(n) pointer overhead.\nNote: Tail insert is O(n) without a tail pointer; adding one reduces it to O(1) at the cost of bookkeeping.",
+        "metadata": {
+            "concept": "Singly Linked List",
+            "category": "Linked",
+            "query_type": "complexity",
+            "difficulty": "intermediate"
+        }
+    },
+    {
+        "instruction": "Critically evaluate the design limitations of a Doubly Linked List and discuss mitigation strategies used in production systems.",
+        "response": "Design limitations of Doubly Linked List: pointer overhead doubles vs singly linked; cache misses are worse due to larger node size.\nMitigation strategies used in practice: use sentinel/dummy nodes to simplify boundary logic; pool-allocate nodes for better locality.\nProduction example: Python's functools.lru_cache uses a doubly linked list + dict to achieve O(1) get and evict.",
+        "metadata": {
+            "concept": "Doubly Linked List",
+            "category": "Linked",
+            "query_type": "tradeoff",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Give a simple real-world example where a Queue is useful.",
+        "response": "A simple use case for Queue: printing documents \u2014 first document submitted is printed first. This works well because FIFO ensures fairness \u2014 the order of submission is preserved.",
+        "metadata": {
+            "concept": "Queue",
+            "category": "Abstract",
+            "query_type": "use_case",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "Derive and justify the amortized time complexity for operations on a Deque, noting any edge cases.",
+        "response": "Amortized and worst-case analysis for Deque:\n  - Work-stealing: workers push/pop from back (LIFO); idle workers steal from front (FIFO)\n  - Sliding window max/min: deque of indices in O(n) total\n  - C++ std::deque: segmented array gives O(1) push_front without full copy\nSpace: O(n).\nDerivation insight: Array-backed deque uses circular indexing with doubling; all ops are O(1) amortized.",
+        "metadata": {
+            "concept": "Deque",
+            "category": "Abstract",
+            "query_type": "complexity",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "Analyze the architectural trade-offs that make a Priority Queue preferable over alternatives in high-performance systems.",
+        "response": "In high-performance systems, Priority Queue is chosen over alternatives when implementing Dijkstra on a graph with 10M nodes and 100M edges where decrease_key is called billions of times. Trade-off rationale: Fibonacci heap reduces decrease_key from O(log n) to O(1) amortized, reducing total complexity from O(E log V) to O(E + V log V). Real-world examples: Python heapq, Java PriorityQueue, C++ std::priority_queue, Dijkstra in routing protocols (OSPF).",
+        "metadata": {
+            "concept": "Priority Queue",
+            "category": "Abstract",
+            "query_type": "use_case",
+            "difficulty": "advanced"
+        }
+    },
+    {
+        "instruction": "What is a Dynamic Array and how does it work?",
+        "response": "A Dynamic Array is a Linear data structure. a resizable array that automatically grows by allocating a larger block and copying elements when capacity is exceeded. Think of it like a suitcase that doubles in size each time it gets full. You interact with it mainly through: append, access by index, pop, insert.",
+        "metadata": {
+            "concept": "Dynamic Array",
+            "category": "Linear",
+            "query_type": "definition",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "What are the main advantages and disadvantages of using a Singly Linked List?",
+        "response": "Advantages of Singly Linked List:\n- O(1) insert/delete at head\nDynamic size\nNo wasted capacity\n\nDisadvantages:\n- O(n) search and indexed access\nPoor cache locality\nExtra memory for pointers",
+        "metadata": {
+            "concept": "Singly Linked List",
+            "category": "Linked",
+            "query_type": "tradeoff",
+            "difficulty": "beginner"
+        }
+    },
+    {
+        "instruction": "What are the basic time complexities for common operations on a Segment Tree?",
+        "response": "For a Segment Tree, the basic operation costs are:\n  - Build: O(n)\n  - Range query: O(log n)\n  - Point update: O(log n)\nSpace used: O(n) for standard; O(n log n) for persistent/merge sort tree.",
+        "metadata": {
+            "concept": "Segment Tree",
+            "category": "Graph",
+            "query_type": "complexity",
+            "difficulty": "beginner"
+        }
+    }
+]

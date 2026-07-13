@@ -1,0 +1,11 @@
+Generate 20 Binary Search examples.
+
+Return only valid JSON.
+
+Each example must include:
+- algorithm
+- difficulty (Easy, Medium, Hard)
+- input (sorted integer array)
+- target
+- output (correct index or -1 if not found)
+- explanationcd
