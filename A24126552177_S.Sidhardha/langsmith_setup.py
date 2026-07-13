@@ -1,6 +1,3 @@
-# LangSmith Setup - Week 1 Task for S. Siddaradha (A24...177)
-# LangSmith is a platform by LangChain for tracing, monitoring, and debugging LLM applications
-
 # ============================================================
 # STEP 1: Install required packages
 # ============================================================
