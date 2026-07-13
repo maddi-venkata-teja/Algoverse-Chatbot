@@ -1,0 +1,16 @@
+{
+  "algorithms": [
+    {
+      "name": "Binary Search",
+      "category": "Searching",
+      "worst_time": "O(log n)",
+      "space": "O(1)"
+    },
+    {
+      "name": "Merge Sort",
+      "category": "Sorting",
+      "worst_time": "O(n log n)",
+      "space": "O(n)"
+    }
+  ]
+}

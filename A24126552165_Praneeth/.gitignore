@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+venv/
+wandb/
+__pycache__/
+=======
+.env
+__pycache__/
+*.pyc
+venv/
+.venv/
+>>>>>>> 195a885a6390c13f35cb3d4ac3980feb6267f9f1
