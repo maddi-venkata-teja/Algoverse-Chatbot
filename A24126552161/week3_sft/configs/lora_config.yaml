@@ -1,0 +1,33 @@
+# Week 3 — LoRA/QLoRA Training Config
+base_model: "Qwen/Qwen2.5-1.5B-Instruct"
+
+# --- LoRA settings ---
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules:
+  - q_proj
+  - v_proj
+  - k_proj
+  - o_proj
+
+# --- Quantization (QLoRA) ---
+load_in_4bit: true
+bnb_4bit_compute_dtype: "bfloat16"
+bnb_4bit_quant_type: "nf4"
+
+# --- Training settings ---
+num_train_epochs: 3
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 2
+learning_rate: 0.0002
+max_seq_length: 1024
+logging_steps: 10
+save_steps: 100
+eval_steps: 100
+
+# --- Paths ---
+train_file: "week2_data/train.jsonl"
+val_file: "week2_data/val.jsonl"
+output_dir: "week3_sft/checkpoints"
+adapter_save_path: "week3_sft/final_adapter"
