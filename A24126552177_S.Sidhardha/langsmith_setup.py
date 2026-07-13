@@ -12,9 +12,6 @@
 import os
 
 # Set your LangSmith API Key (get from https://smith.langchain.com)
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_ENDPOINT"]   = "https://api.smith.langchain.com"
-os.environ["LANGCHAIN_API_KEY"]    = "your_langsmith_api_key_here"
 LANGSMITH_API_KEY = os.getenv("LANGSMITH_API_KEY")
 os.environ["LANGCHAIN_PROJECT"]    = "AI-Lab-Week1-Sidharadha"
 os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
