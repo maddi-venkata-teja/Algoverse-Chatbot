@@ -1,0 +1,8 @@
+2026-06-23 20:55:48,104 | INFO | ✅ Loaded 20 records from dataset_shuffled.jsonl
+2026-06-23 20:55:48,104 | INFO | ✅ Valid: 20 | ❌ Skipped: 0
+2026-06-23 20:55:48,104 | ERROR | Caught expected error: Validation failed: Missing key: 'instruction'; Missing key: 'output'
+2026-06-23 20:55:48,104 | ERROR | Caught expected error: Validation failed: 'instruction' cannot be empty.
+2026-06-23 20:55:48,104 | ERROR | Caught expected error: Validation failed: 'instruction' must be a string, got int
+2026-06-23 20:55:48,104 | ERROR | ❌ Error in 'load_checkpoint': Checkpoint directory not found: ./checkpoints
+2026-06-23 20:55:48,104 | ERROR | ❌ Error in 'load_model': model_path cannot be empty.
+2026-06-23 20:55:48,105 | INFO | 📋 Error report saved → error_report.json

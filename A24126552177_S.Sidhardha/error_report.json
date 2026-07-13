@@ -1,0 +1,12 @@
+{
+  "total_errors": 5,
+  "total_warnings": 0,
+  "errors": [
+    "2026-06-23 20:55:48,104 | ERROR | Caught expected error: Validation failed: Missing key: 'instruction'; Missing key: 'output'",
+    "2026-06-23 20:55:48,104 | ERROR | Caught expected error: Validation failed: 'instruction' cannot be empty.",
+    "2026-06-23 20:55:48,104 | ERROR | Caught expected error: Validation failed: 'instruction' must be a string, got int",
+    "2026-06-23 20:55:48,104 | ERROR | \u274c Error in 'load_checkpoint': Checkpoint directory not found: ./checkpoints",
+    "2026-06-23 20:55:48,104 | ERROR | \u274c Error in 'load_model': model_path cannot be empty."
+  ],
+  "warnings": []
+}

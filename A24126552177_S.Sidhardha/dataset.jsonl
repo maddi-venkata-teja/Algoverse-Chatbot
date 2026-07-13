@@ -1,0 +1,20 @@
+{"instruction": "What is machine learning?", "input": "", "output": "Machine learning is a subset of AI where models learn patterns from data."}
+{"instruction": "Explain neural networks.", "input": "", "output": "Neural networks are computing systems inspired by the human brain."}
+{"instruction": "What is NLP?", "input": "", "output": "NLP stands for Natural Language Processing, enabling computers to understand human language."}
+{"instruction": "Define deep learning.", "input": "", "output": "Deep learning uses multi-layered neural networks to learn complex representations."}
+{"instruction": "What is a transformer model?", "input": "", "output": "Transformers are attention-based models used in modern NLP tasks like GPT and BERT."}
+{"instruction": "What is fine-tuning?", "input": "", "output": "Fine-tuning adapts a pretrained model to a specific task using a smaller dataset."}
+{"instruction": "What is overfitting?", "input": "", "output": "Overfitting occurs when a model memorizes training data and performs poorly on new data."}
+{"instruction": "What is a loss function?", "input": "", "output": "A loss function measures the error between predicted and actual outputs during training."}
+{"instruction": "What is gradient descent?", "input": "", "output": "Gradient descent is an optimization algorithm that minimizes the loss by updating weights."}
+{"instruction": "What is tokenization?", "input": "", "output": "Tokenization splits text into smaller units (tokens) for processing by language models."}
+{"instruction": "What is a dataset split?", "input": "", "output": "Dataset split divides data into train, validation, and test sets for model evaluation."}
+{"instruction": "What is a learning rate?", "input": "", "output": "Learning rate controls how much the model weights are updated during each training step."}
+{"instruction": "What is batch size?", "input": "", "output": "Batch size is the number of training samples processed before updating the model weights."}
+{"instruction": "What is an epoch?", "input": "", "output": "An epoch is one complete pass through the entire training dataset."}
+{"instruction": "What is regularization?", "input": "", "output": "Regularization techniques like dropout prevent overfitting by adding constraints to the model."}
+{"instruction": "What is transfer learning?", "input": "", "output": "Transfer learning uses knowledge from a pretrained model to improve learning on a new task."}
+{"instruction": "What is embedding?", "input": "", "output": "Embeddings are dense vector representations of words or tokens used as model inputs."}
+{"instruction": "What is attention mechanism?", "input": "", "output": "Attention allows models to focus on relevant parts of the input when generating output."}
+{"instruction": "What is RLHF?", "input": "", "output": "RLHF is Reinforcement Learning from Human Feedback, used to align AI with human preferences."}
+{"instruction": "What is a checkpoint in training?", "input": "", "output": "A checkpoint saves model weights at intervals so training can be resumed if it crashes."}
