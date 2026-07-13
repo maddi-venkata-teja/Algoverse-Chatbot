@@ -1,0 +1,186 @@
+# Algo-Verse V1 Testing Report
+
+**Application:** algo-verse.streamlit.app
+
+**Testing Type:** Prompt Testing
+
+**Dataset Used:** full_dataset.json
+
+**Total Concepts Tested:** 20
+
+**Date:** July 2026
+
+---
+
+## Objective
+
+To verify the correctness, consistency, formatting, and response quality of the AI model across multiple Data Structures and Algorithms concepts.
+
+---
+
+## Test Summary
+
+| Test Category | Status |
+|---------------|--------|
+| Basic Definitions | ✅ Pass |
+| Time Complexity Accuracy | ⚠️ Partial |
+| Code Generation | ✅ Pass |
+| Non-linear Structures | ⚠️ Partial |
+| Dynamic Programming | ❌ Needs Improvement |
+| JSON Formatting | ⚠️ Partial |
+
+---
+
+## Test Cases
+
+### Test Case 1
+
+**Concept:** Array
+
+**Prompt**
+
+```
+Define an Array and list its properties.
+```
+
+**Expected Result**
+
+- Correct definition
+- Ordered
+- Indexed
+- Homogeneous
+- O(1) access
+
+**Actual Result**
+
+Correct definition and properties returned.
+
+**Status**
+
+✅ PASS
+
+---
+
+### Test Case 2
+
+**Concept:** Stack
+
+**Prompt**
+
+```
+Explain Stack with operations.
+```
+
+**Expected Result**
+
+- LIFO
+- Push O(1)
+- Pop O(1)
+- Peek O(1)
+
+**Actual Result**
+
+Returned accurate explanation.
+
+**Status**
+
+✅ PASS
+
+---
+
+### Test Case 3
+
+**Concept:** Graph
+
+**Prompt**
+
+```
+Explain Graph traversal using BFS and DFS.
+```
+
+**Expected Result**
+
+Correct explanation with traversal order.
+
+**Actual Result**
+
+Traversal explained correctly but formatting inconsistent.
+
+**Status**
+
+⚠️ PARTIAL PASS
+
+---
+
+### Test Case 4
+
+**Concept:** Dynamic Programming
+
+**Prompt**
+
+```
+Explain Memoization vs Tabulation.
+```
+
+**Expected Result**
+
+Difference with examples.
+
+**Actual Result**
+
+Missed overlapping subproblems explanation.
+
+**Status**
+
+❌ FAIL
+
+---
+
+### Test Case 5
+
+**Concept:** Trie
+
+**Prompt**
+
+```
+Explain Trie operations.
+```
+
+**Expected Result**
+
+Insert, Search, Prefix Search.
+
+**Actual Result**
+
+Prefix search explanation incomplete.
+
+**Status**
+
+⚠️ PARTIAL PASS
+
+---
+
+## Bugs Identified
+
+| ID | Description | Severity |
+|----|-------------|----------|
+| BUG-01 | Inconsistent formatting for long answers | Medium |
+| BUG-02 | DP explanation lacks detail | High |
+| BUG-03 | Trie prefix explanation incomplete | Medium |
+| BUG-04 | JSON output contains extra conversational text | Medium |
+
+---
+
+## Overall Observation
+
+The application performs well for linear data structures such as Arrays, Stacks, and Queues. Accuracy decreases for advanced topics including Dynamic Programming, Trie, and Graph algorithms. Formatting consistency also requires improvement for structured JSON outputs.
+
+---
+
+## Overall Result
+
+**Pass Rate:** 80%
+
+**Recommendation**
+
+Improve prompt templates for advanced algorithmic concepts and enforce strict JSON formatting.

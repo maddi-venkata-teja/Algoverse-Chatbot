@@ -1,0 +1,53 @@
+import os
+import platform
+import socket
+import subprocess
+
+def run_cmd(cmd):
+    try:
+        return subprocess.check_output(cmd, shell=True, text=True).strip()
+    except Exception:
+        return "Not Available"
+
+print("="*50)
+print("SYSTEM ARCHITECTURE CONFIGURATION CHECK")
+print("="*50)
+print(f"Hostname      : {socket.gethostname()}")
+print(f"OS            : {platform.system()} ({platform.release()})")
+print(f"Architecture  : {platform.architecture()[0]}")
+print(f"Processor     : {platform.processor()}")
+print(f"Python Ver    : {platform.python_version()}")
+print(f"Logical Cores : {os.cpu_count()}")
+
+print("\n" + "="*20 + " HARDWARE DETAILS " + "="*20)
+
+if platform.system() == "Windows":
+    print("\n[CPU INFO]")
+    os.system("wmic cpu get Name,NumberOfCores,NumberOfLogicalProcessors")
+    print("\n[MEMORY INFO]")
+    os.system("wmic OS get TotalVisibleMemorySize,FreePhysicalMemory")
+    print("\n[DISK INFO]")
+    os.system("wmic logicaldisk get Caption,Size,FreeSpace")
+    print("\n[GPU DETAILS]")
+    os.system("wmic path win32_VideoController get Name")
+    
+elif platform.system() == "Darwin": 
+    print("\n[CPU INFO]")
+    print(run_cmd("sysctl -n machdep.cpu.brand_string"))
+    # Added 2>/dev/null to silence the system_profiler internal warnings
+    print("\n[MEMORY INFO]")
+    print(run_cmd("system_profiler SPHardwareDataType 2>/dev/null | grep 'Memory:'"))
+    print("\n[DISK INFO]")
+    print(run_cmd("df -h / | tail -n 1 | awk '{print \"Total: \" $2 \" | Used: \" $3 \" | Free: \" $4}'"))
+    print("\n[GPU DETAILS]")
+    print(run_cmd("system_profiler SPDisplaysDataType 2>/dev/null | grep 'Chipset Model'"))
+
+else:
+    print("\n[CPU INFO]")
+    print(run_cmd("lscpu | grep 'Model name'"))
+    print("\n[MEMORY INFO]")
+    print(run_cmd("free -h"))
+    print("\n[DISK INFO]")
+    print(run_cmd("df -h /"))
+    print("\n[GPU DETAILS]")
+    print(run_cmd("lspci | grep -i nvidia || echo 'No NVIDIA GPU detected'"))
