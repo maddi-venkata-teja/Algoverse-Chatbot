@@ -5,6 +5,7 @@ import chromadb
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from sentence_transformers import SentenceTransformer
 
+
 # ─── STEP 1: Detect PDF type ───────────────────────────────────────
 def detect_pdf_type(pdf_path):
     doc = fitz.open(pdf_path)
