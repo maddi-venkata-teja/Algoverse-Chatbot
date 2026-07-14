@@ -1,0 +1,60 @@
+{
+    "total_examples": 42991,
+    "duplicates": 0,
+    "balanced": {
+        "categories": false,
+        "concepts": false,
+        "difficulty": false,
+        "query_types": false
+    },
+    "category_distribution": {
+        "Linked": 6144,
+        "Abstract": 6144,
+        "Graph": 6144,
+        "Linear": 6144,
+        "Heap": 6144,
+        "Hashing": 6144,
+        "Tree": 6127
+    },
+    "concept_distribution": {
+        "XOR Linked List": 1536,
+        "Stack": 1536,
+        "Queue": 1536,
+        "Segment Tree": 1536,
+        "Adjacency List": 1536,
+        "Array": 1536,
+        "Skip List": 1536,
+        "Min-Max Heap": 1536,
+        "Trie": 1536,
+        "Dynamic Array": 1536,
+        "AVL Tree": 1536,
+        "Cuckoo Hash Table": 1536,
+        "Deque": 1536,
+        "Circular Buffer": 1536,
+        "Sparse Array": 1536,
+        "Binary Heap": 1536,
+        "Red-Black Tree": 1519,
+        "Fibonacci Heap": 1536,
+        "Union-Find": 1536,
+        "Leftist Heap": 1536,
+        "Doubly Linked List": 1536,
+        "Adjacency Matrix": 1536,
+        "Bloom Filter": 1536,
+        "Priority Queue": 1536,
+        "Singly Linked List": 1536,
+        "Binary Search Tree": 1536,
+        "B-Tree": 1536,
+        "Hash Table": 1536
+    },
+    "difficulty_distribution": {
+        "beginner": 14336,
+        "advanced": 14324,
+        "intermediate": 14331
+    },
+    "query_type_distribution": {
+        "use_case": 10752,
+        "tradeoff": 10752,
+        "definition": 10752,
+        "complexity": 10735
+    }
+}
